@@ -1,0 +1,21 @@
+server:
+  port: 9091
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/eventuate
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+eventuatelocal:
+  rocket:
+    mq:
+      nameserver:
+        address: 127.0.0.1:9876
+
+#eventuatelocal:
+#  kafka:
+#    bootstrap:
+#      servers: 127.0.0.1:9092
